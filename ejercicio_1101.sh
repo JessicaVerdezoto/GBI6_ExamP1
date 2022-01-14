@@ -13,6 +13,9 @@ cp ../data/Marra2014_data.fasta my_file.fasta
 #  Cuántos contigs están clasificados como isogrupo00036?
 grep -c isogroup00036 my_file.fasta
 16
+#  Sustituya el delimitador original de "dos espacios" por una coma
+cat my_file.fasta | tr -s ' ' ',' > my_file.tmp
+mv my_file.tmp my_file.fasta
 
 
 
