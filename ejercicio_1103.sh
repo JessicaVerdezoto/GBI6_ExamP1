@@ -15,3 +15,9 @@ cd Saavedra2013
 ( ls * .txt ) ;
 head -n1 $archivo | awk ;
 cat $archivo | wc-l ;  
+
+# Pregunta 3
+## Nos ubicamos en el directorio donde se va a trabajar
+cd Saavedra2013
+
+
