@@ -45,4 +45,4 @@ fi
 done
 echo El archivo con mayor num de filas es: $fila;
 
-echo 
+echo El archivo con mayor num de columnas es: $columna;
