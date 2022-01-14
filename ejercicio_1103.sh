@@ -25,3 +25,16 @@ for f in $(ls * .txt);
 do 
 PART1= $(head -n 1 $archivo | awk )
 cat $PART1 ;
+
+PART2= $(cat $archivo | wc-1) ;
+
+##Columna May
+if ((PART1 > var1));
+then
+columna=$archivo;
+export var1=$PART1;
+fi
+
+##Fila May
+if 
+
