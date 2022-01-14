@@ -36,5 +36,13 @@ export var1=$PART1;
 fi
 
 ##Fila May
-if 
+if ((PART2 > var));
+then
+fila=$archivo;
+export var=$PART2;
+fi
 
+done
+echo El archivo con mayor num de filas es: $fila;
+
+echo 
