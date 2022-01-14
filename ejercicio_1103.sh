@@ -9,3 +9,9 @@ cat n1.txt ;
 head -n1 n1.txt | grep -o "  "  | wc-l ;
 wc -l n1.txt ;
 
+# Pregunta 2
+# # Nos ubicamos en el directorio donde se va a trabajar
+cd Saavedra2013
+( ls * .txt ) ;
+head -n1 $archivo | awk ;
+cat $archivo | wc-l ;  
