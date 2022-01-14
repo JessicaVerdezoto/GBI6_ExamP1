@@ -4,3 +4,4 @@
 # # Nos ubicamos en el directorio donde se va a trabajar
 cd Desktop/Sexto\ Sem/CSB/unix/data/
 #  Cambie de directorio
+cd Desktop/Sexto\ Sem/CSB/unix/sandbox/
