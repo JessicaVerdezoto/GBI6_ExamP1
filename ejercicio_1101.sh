@@ -16,7 +16,11 @@ grep -c isogroup00036 my_file.fasta
 #  Sustituya el delimitador original de "dos espacios" por una coma
 cat my_file.fasta | tr -s ' ' ',' > my_file.tmp
 mv my_file.tmp my_file.fasta
-
+#  Cuántos isogrupos únicos hay en el archivo?
+grep '>' my_file.fasta | head -n 2
+grep '>' my_file.fasta | cut -d ',' -f 4 | head -n 2
+grep '>' my_file.fasta | cut -d ',' -f 4 | sort | uniq | wc -1
+43
 
 
 
