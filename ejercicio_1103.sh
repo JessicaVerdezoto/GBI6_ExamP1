@@ -19,5 +19,9 @@ cat $archivo | wc-l ;
 # Pregunta 3
 ## Nos ubicamos en el directorio donde se va a trabajar
 cd Saavedra2013
-
-
+var=0
+var1=0 
+for f in $(ls * .txt);
+do 
+PART1= $(head -n 1 $archivo | awk )
+cat $PART1 ;
