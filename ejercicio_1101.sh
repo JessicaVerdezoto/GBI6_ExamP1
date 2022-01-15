@@ -18,8 +18,9 @@ cat my_file.fasta | tr -s ' ' ',' > my_file.tmp
 mv my_file.tmp my_file.fasta
 #  Cuántos isogrupos únicos hay en el archivo?
 grep '>' my_file.fasta | head -n 2
+
 grep '>' my_file.fasta | cut -d ',' -f 4 | head -n 2
-grep '>' my_file.fasta | cut -d ',' -f 4 | sort | uniq | wc -1
+grep '>' my_file.fasta | cut -d ',' -f 4 | sort | uniq | wc -l
 43
 #  ¿Qué contig tiene el mayor número de lecturas (numreads)? ¿Cuántas lecturas tiene?
 grep '>' my_file.fasta | cut -d ',' -f 1,3 | sort -t '=' -k 2 -n -r | head -n 1
