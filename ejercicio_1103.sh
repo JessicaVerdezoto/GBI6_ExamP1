@@ -8,13 +8,17 @@ echo "Número de columnas:";
 head -n1 n1.txt | grep -o "  "  | wc-l ;
 echo "Número de filas:"
 wc -l n1.txt ;
-cat n1.txt ;
+echo "Fin Ejec"
+
 # Pregunta 2
 # # Nos ubicamos en el directorio donde se va a trabajar
 cd Saavedra2013
-( ls * .txt ) ;
-head -n1 $archivo | awk ;
-cat $archivo | wc-l ;  
+for f in $( ls * .txt ) ;
+do
+echo "Número de columnas:"
+head -n1 $f | awk '{print NF}';
+echo "Número de filas:"
+cat $f | wc-l ;  
 
 # Pregunta 3
 ## Nos ubicamos en el directorio donde se va a trabajar
@@ -23,7 +27,7 @@ var=0
 var1=0 
 for f in $(ls * .txt);
 do 
-PART1= $(head -n 1 $archivo | awk )
+PART1= $(head -n 1 $f | awk )
 cat $PART1 ;
 
 PART2= $(cat $archivo | wc-1) ;
@@ -31,7 +35,7 @@ PART2= $(cat $archivo | wc-1) ;
 ##Columna May
 if ((PART1 > var1));
 then
-columna=$archivo;
+columna=$f;
 export var1=$PART1;
 fi
 
@@ -43,6 +47,7 @@ export var=$PART2;
 fi
 
 done
+echo "Fin Ejec";
 echo El archivo con mayor num de filas es: $fila;
 
 echo El archivo con mayor num de columnas es: $columna;
