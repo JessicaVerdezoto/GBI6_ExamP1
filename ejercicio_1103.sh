@@ -34,7 +34,7 @@ do
 PART1= $(head -n 1 $f | awk )
 cat $PART1 ;
 
-PART2= $(cat $archivo | wc-1) ;
+PART2= $(cat $f | wc-1) ;
 
 ##Columna May
 if ((PART1 > var1));
