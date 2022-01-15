@@ -4,10 +4,11 @@
 # # Nos ubicamos en el directorio donde se va a trabajar
 cd Saavedra2013
 #  Pregunta 1
-cat n1.txt ;
+echo "Número de columnas:";
 head -n1 n1.txt | grep -o "  "  | wc-l ;
+echo "Número de filas:"
 wc -l n1.txt ;
-
+cat n1.txt ;
 # Pregunta 2
 # # Nos ubicamos en el directorio donde se va a trabajar
 cd Saavedra2013
