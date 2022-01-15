@@ -6,8 +6,10 @@ cd Saavedra2013
 #  Pregunta 1
 echo "Número de columnas:";
 head -n1 n1.txt | grep -o "  "  | wc-l ;
+80
 echo "Número de filas:"
 wc -l n1.txt ;
+97
 echo "Fin Ejec"
 
 # Pregunta 2
@@ -18,7 +20,9 @@ do
 echo "Número de columnas:"
 head -n1 $f | awk '{print NF}';
 echo "Número de filas:"
-cat $f | wc-l ;  
+cat $f | wc-l ;
+done
+echo "Fin Ejec"  
 
 # Pregunta 3
 ## Nos ubicamos en el directorio donde se va a trabajar
@@ -42,7 +46,7 @@ fi
 ##Fila May
 if ((PART2 > var));
 then
-fila=$archivo;
+fila=$f;
 export var=$PART2;
 fi
 
